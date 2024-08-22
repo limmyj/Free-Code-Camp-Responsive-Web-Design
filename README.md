@@ -1,2 +1,2 @@
 # freeCodeCamp
-Practise on Free Code Camp
+Practice on Free Code Camp
