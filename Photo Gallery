@@ -24,6 +24,7 @@
   </body>
 </html>
 
+/* style.css */
 * {
   box-sizing: border-box;
 }
