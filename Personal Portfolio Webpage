@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#welcome-section">Welcome</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="welcome-section">
+    <h1>Welcome to My Portfolio</h1>
+  </section>
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-tile">
+      <a href="https://github.com/your-profile/project1" target="_blank">Project 1</a>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <a id="profile-link" href="https://github.com/your-profile" target="_blank">My GitHub Profile</a>
+  </section>
+</body>
+</html>
+
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+#navbar ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#welcome-section {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+#welcome-section h1 {
+    font-size: 2.5em;
+}
+
+#projects {
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.project-tile {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: #333;
+}
+
+#contact {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#profile-link {
+    color: blue;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project-tile {
+        text-align: center;
+    }
+}
